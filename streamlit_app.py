@@ -21,7 +21,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 import requests
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_normalized = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
 
 # write your own comment -what does the next line do? 
